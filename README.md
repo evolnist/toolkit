@@ -17,17 +17,23 @@ PHP製のツール郡をHTML5化して、
 	window.applicationCache
 
 
-### FileSystem
+### File API
 
-http://jsdo.it/kurukurupapa/kOKf
+[FileSystem](http://jsdo.it/kurukurupapa/kOKf)
 
 	fileEntry.createWriter()
 
 
 ### 複数ファイルの一括取得
 
-JSZip
-http://stuartk.com/jszip/
+[JSZip](http://stuartk.com/jszip/)
+
+	var zip = new JSZip();
+	zip.file("Hello.txt", "Hello World\n");
+	var img = zip.folder("images");
+	img.file("smile.gif", imgData, {base64: true});
+	var content = zip.generate();
+	location.href="data:application/zip;base64,"+content;
 
 
 ### WebSQL
