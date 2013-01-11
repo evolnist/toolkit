@@ -14,27 +14,33 @@ PHP製のツール郡をHTML5化して、
 
 
 ### AppCache
-	window.applicationCache
+
+```javascript
+window.applicationCache
+```
 
 
 ### File API
 
 [FileSystem](http://jsdo.it/kurukurupapa/kOKf)
 
-	fileEntry.createWriter()
+```javascript
+fileEntry.createWriter()
+```
 
 
 ### 複数ファイルの一括取得
 
 [JSZip](http://stuartk.com/jszip/)
 
-	var zip = new JSZip();
-	zip.file("Hello.txt", "Hello World\n");
-	var img = zip.folder("images");
-	img.file("smile.gif", imgData, {base64: true});
-	var content = zip.generate();
-	location.href="data:application/zip;base64,"+content;
-
+```javascript
+var zip = new JSZip();
+zip.file("Hello.txt", "Hello World\n");
+var img = zip.folder("images");
+img.file("smile.gif", imgData, {base64: true});
+var content = zip.generate();
+location.href="data:application/zip;base64,"+content;
+```
 
 ### WebSQL
 
@@ -44,10 +50,13 @@ PHP製のツール郡をHTML5化して、
 
 ### JSON
 
-	JSON.stringify([1,2])
-	JSON.parse('[1,2]')
-
+```javascript
+JSON.stringify([1,2])
+JSON.parse('[1,2]')
+```
 
 ### Local Strage
 
-	window.localStrage
+```javascript
+window.localStrage
+```
